@@ -1,0 +1,85 @@
+@import 'utilities/_variables';
+
+///////////////////////////////
+///// About
+//////////////////////////////
+
+.section-content {
+	margin-top: 25px;
+}
+
+.sub-headline-style {
+    @include breakpoint($breakpoint-level-3) {
+         display: block;
+    }
+}
+
+footer {
+	// background-color: $opacity-block-1;
+	width: 100%;
+	@media screen and (min-width: 340px) {margin-top: 100px;}
+	@media screen and (min-width: 342px) {margin-top: 160px;}
+	@media screen and (min-width: 355px) {margin-top: 175px;}
+	@media screen and (min-width: 365px) {margin-top: 200px;}
+	@media screen and (min-width: 375px) {margin-top: 250px;}
+	@media screen and (min-width: 400px) {margin-top: 150px;}
+	@media screen and (min-width: 440px) {margin-top: 150px;}
+	@media screen and (min-width: 460px) {margin-top: 180px;}
+	@media screen and (min-width: 468px) {margin-top: 220px;}
+	// @media screen and (min-width: 440px) {margin-top: 150px;}
+	// @media screen and (min-width: 468px) {margin-top: 220px;}
+	@media screen and (min-width: 480px) {margin-top: 230px;}
+	@media screen and (min-width: 481px) {margin-top: 140px;}
+	@media screen and (min-width: 496px) {margin-top: 180px;}
+	@media screen and (min-width: 540px) {margin-top: 200px;}
+	@media screen and (min-width: 552px) {margin-top: 230px;}
+
+	@media screen and (min-width: 632px) {margin-top: 250px;}
+
+	@media screen and (min-width: 768px) {margin-top: 120px;}
+	@media screen and (min-width: 1024px) {margin-top: 120px;}
+}
+
+// White Text Box
+.section-content::before {
+	// 1. Default
+	min-height: 1130px;
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint($breakpoint-level-1) {min-height: 1200px;}
+	@media screen and (min-width: 400px) {min-height: 1090px;}
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint($breakpoint-level-2) {min-height: 1150px;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 960px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 1040px;}
+}
+
+// Gold to Froly to Gold
+.section-content::after {
+	// 1. Default
+	min-height: 1130px;
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint($breakpoint-level-1) {min-height: 1270px;}
+	@media screen and (min-width: 400px) {min-height: 1160px;} // red
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint($breakpoint-level-2) {min-height: 1230px;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 940px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 1020px;}
+}
+
+// Gold to Froly
+.article-colored-box {
+	// 1. Default
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint($breakpoint-level-1) {min-height: 1235px;}
+	@media screen and (min-width: 400px) {min-height: 1125px;}
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint($breakpoint-level-2) {min-height: 1190px;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 960px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 1040px;}
+}

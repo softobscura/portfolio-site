@@ -1,0 +1,884 @@
+@charset "utf-8";
+
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	/*vertical-align: baseline;*/
+}
+
+/***************************************
+
+	Color Scheme
+	DDA Text Real Red 	#b30838
+	DDA Text Red 		#821518
+	Dark Red 			#871417
+	Dark Gray			#666666
+	Light Gray			#e2e2e2
+	Black				#FFF
+	White				#000
+
+****************************************/
+
+/***************************************
+CONSISTENT ELEMENTS
+****************************************/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	color: #b30838;
+	font-weight: bold;
+	padding-bottom: 20px;
+	}
+
+h1 {
+	font-size: 18px;
+}
+
+p {
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.7em;
+	font-size: 13.5px;
+
+}
+
+body {
+	background-color: #e2e2e2;
+}
+
+
+/***************************************
+LINK RULES
+****************************************/
+
+a:link {
+	color: #666666;
+	text-decoration: none;
+}
+
+a.more-info:link {
+	color: #b30838;
+}
+
+a.more-info:visited {
+	color: #b30838;
+}
+
+a:hover {
+	text-decoration: underline;	
+}
+
+a:visited {
+	color: 666666;
+}
+
+/***************************************
+CLASSES (recurring)
+****************************************/
+
+a.resources {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-style: italic;
+	color: #b30838;
+	}
+	
+.bold-arial {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.EngageLogo{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+.ddasmallimage {
+	float: right;
+	margin-top: 0px;
+}
+
+.emailcontact {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	text-decoration: underline;
+}
+
+.floatLeft {
+	float: left;
+
+}
+
+.floatRight {
+	float: right;	
+}
+
+
+.floatrightcontact {
+	float: right;
+	margin-right: 40px;
+}
+
+.line  {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e2e2e2;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.more-info {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 12px;
+	color: #b30838;
+	}
+
+.spacing {
+	margin-bottom: 15px;
+
+}
+
+/***************************************
+LAYOUT
+****************************************/
+
+#wrapper {
+	width:960px;
+	background-color: #FFF;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	box-shadow: 0px 0px 5px #999999;
+}
+
+/***************************************
+HEADER
+****************************************/
+
+#header {
+	width: 960px;
+	height: 92px;
+}
+
+#DDA-logo {
+	margin-top: 26px;
+	margin-left: 25px;
+	float: left;
+	text-decoration: none;
+}
+
+#header div p {
+	text-align: right;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
+#call-to-action {
+	width: 210px;
+	float: right;
+	margin-top: 26px;
+	margin-right: 25px;
+}
+
+#header #call-to-action img {
+	float: right;
+}
+
+/***************************************
+MAIN NAVIGATION
+****************************************/
+
+#main-nav-top {
+	width: 960px;
+		
+}
+
+#nav-top {
+	background-image: url(../images/nav/top-nav.gif);
+	height: 44px;
+	width: 960px;
+	background-repeat: no-repeat;
+	box-shadow: 0px 3px 3px #999999;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+#nav-top li {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-size: 14px;
+	float: left;
+}
+
+#nav-top li a {
+	display: block;
+	height: 44px;
+	width: 120px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 44px;
+	font-weight: bold;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav-top li ul {
+	text-align: left;
+	padding-left: 0px;
+	position: absolute;
+	display: none;
+}
+
+#nav-top li ul li {
+	clear: both;
+}
+#nav-top li ul li a {
+	display: block;
+	width: 220px;
+	padding-left: 20px;
+	text-transform: capitalize;
+	font-size: 13px;
+	text-align: left;
+	background-color: #95062E;
+	color: #FFF;
+	font-weight: normal;
+}
+
+/*---Hover Effects---*/
+
+#nav-top li:hover ul {
+	display: block;
+	z-index: 2;
+	
+}
+
+#nav-top li:hover {
+	background-color: #95062E;
+}
+
+#nav-top li:hover a{
+	color: #fff;
+}
+
+#nav-top li:hover li a {
+	color: #fff;
+	background-color: #b30838;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+#nav-top li li a:hover {
+	background-color: #821518; 
+}
+
+
+/***************************************
+PAGE INDICATOR
+****************************************/
+
+.current {
+	background-color: #FFF;
+}
+
+#main-nav-top ul li a.current {
+	color: #b30838;
+}
+
+/***************************************
+BANNERS
+****************************************/
+
+/*---Home Message Container---*/
+
+.home-message-container {
+	background-image: url(../images/banner/DDA-welcome-message-w-arrow.gif);
+	height: 83px;
+	background-repeat: no-repeat;
+	margin-top: 5px;	
+	margin-bottom: 5px;
+	
+}	
+
+/*---Subpage Message Holder---*/
+
+.subpage-message-holder-about-us {
+	background-image: url(../images/banner/DDA-about-us-bar.gif);
+	height: 83px;
+	width: 960px;
+	clear: both;
+	background-repeat: no-repeat;
+	margin-top: 7px;
+	margin-bottom: 10px;
+	
+}
+
+.subpage-message-holder-services {
+	background-image: url(../images/banner/DDA-services-bar.gif);
+	height: 83px;
+	width: 960px;
+	clear: both;
+	background-repeat: no-repeat;
+	margin-top: 7px;
+	margin-bottom: 10px;
+	
+}
+
+.subpage-message-holder-news-bar {
+	background-image: url(../images/banner/DDA-news-bar.gif);
+	height: 83px;
+	width: 960px;
+	clear: both;
+	background-repeat: no-repeat;
+	margin-top: 7px;
+	margin-bottom: 10px;
+	
+}
+
+.subpage-message-holder-resources-bar {
+	background-image: url(../images/banner/DDA-resources-bar.gif);
+	height: 83px;
+	width: 960px;
+	clear: both;
+	background-repeat: no-repeat;
+	margin-top: 7px;
+	margin-bottom: 10px;
+	
+}
+
+.subpage-message-holder-contact-us-bar {
+	background-image: url(../images/banner/DDA-contact-bar.gif);
+	height: 83px;
+	width: 960px;
+	clear: both;
+	background-repeat: no-repeat;
+	margin-top: 7px;
+	margin-bottom: 10px;
+	
+}
+
+.subpage-message-holder-location-bar {
+	background-image: url(../images/banner/DDA-Location.gif);
+	height: 83px;
+	width: 960px;
+	clear: both;
+	background-repeat: no-repeat;
+	margin-top: 7px;
+	margin-bottom: 10px;
+	
+}
+
+
+.subpage-message {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	font-style: italic;
+	text-align: right;
+	margin-right: 50px;
+	line-height: 7.5em;
+}
+
+/***************************************
+BILLBOARD
+****************************************/
+#billboard {
+	height:350px;
+	width: 910px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	background-color: #e2e2e2;
+	z-index: 1;
+}
+
+.fadein { 
+	position:relative; 
+	width:910px; 
+	height:350px;
+	 
+	}
+
+.fadein img {
+	position:absolute; 
+	left:0; 
+	top:0; }
+
+
+/***************************************
+LAYOUT LEFT COLUMN
+****************************************/
+
+.back-to-top-box {
+	width: 525px;
+	margin-left: 31px;
+}
+
+#left-column {
+	width:614px;
+	float: left;
+	background-image: url(../images/backgrounds/gradient-container.gif);
+	margin-bottom: 25px;
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #e2e2e2;
+}
+
+#left-column-content-holder {
+	width: 525px;
+	margin-left: 31px;
+	margin-right: auto;
+	margin-top: 35px;
+}
+
+
+/*---Left Sub Columns---*/
+#left-sub-column-1 {
+	width: 247px;
+	margin-left: 28px;
+	margin-right: 8px;
+	float: left;
+}
+
+#left-sub-column-2 {
+	width: 247px;
+	margin-left: 25px;
+	margin-right: 10px;
+	float: left;
+}
+
+.left-column-img  {
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-top: 25px;
+}
+
+#left-column-content-holder p {
+	padding-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#why-choose-dda {
+	float: left;
+	padding-right: 10px;
+}
+
+#left-column-content-holder h1 {
+	padding-top: 10px;
+
+}
+
+/***************************************
+RIGHT COLUMN
+****************************************/
+
+#right-column {
+	width:270px;
+	float: right;
+	margin-right: 25px;
+}
+
+
+/*---Request a Quote---*/
+
+#request-for-a-quote a{
+	margin-top: -20px;
+	background-image: url(../images/buttons/Request-for-a-Quote-normal.png);
+	height: 110px;
+	width: 270px;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+#request-for-a-quote a:hover {
+	background-image: url(../images/buttons/Request-for-a-Quote-hover.png);
+}
+
+
+/*---Download Our Brochure---*/
+
+#download-our-brochure a{
+	margin-top: -10px;
+	background-image: url(../images/buttons/Download-DDA-brochure.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 110px;
+	width: 270px;
+}
+#download-our-brochure a:hover {
+	margin-top: -10px;
+	background-image: url(../images/buttons/Download-DDA-brochure-hover.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 110px;
+	width: 270px;
+}
+
+/*--Services-Summary--*/
+
+#right-column #services-summary h6 {
+	font-size: 12px;
+	text-align: right;
+
+}
+
+#services-summary {
+	background-image: url(../images/backgrounds/home-box-small.gif);
+	background-repeat: no-repeat;
+}
+
+
+#services-summary h2 {
+	padding-left: 23px;
+	padding-top: 25px;
+
+}
+#services-summary h6 {
+	padding-top: 20px;
+	margin-right: 20px;
+}
+
+#services-summary ul {
+	list-style-type: none;
+	background-repeat: no-repeat;
+	padding-left: 35px;
+	padding-right: 30px;
+}
+
+#services-summary ul li{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	line-height: 2em;
+	list-style-image: url(../images/square-bullet.gif);
+
+
+}
+
+
+
+/***************************************
+SIDEBAR NAVIGATION
+****************************************/
+
+#sidebar-nav {
+	width: 270px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #e2e2e2;
+}
+#sidebar-nav ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	list-style-type: none;
+	padding-left: 0px;
+}
+#sidebar-nav ul li {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e2e2e2;
+}
+
+#sidebar-nav ul li a {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	font-style: italic;
+	color: #666666;
+	text-decoration: none;
+	line-height: 3em;
+	height: 39px;
+	display: block;
+	background-image: url(../images/nav/grey-arrow.png);
+	background-repeat: no-repeat;
+	background-position: 10px 1.1em;
+	padding-left: 30px;
+}
+
+
+#sidebar-nav ul li a:hover {
+	font-weight: bold;
+	color: #666666;
+	background-image: url(../images/nav/grey-arrow.png);
+	background-repeat: no-repeat;
+	background-position: 10px 1.1em;
+	padding-left: 30px;
+	background-color: #CCC;
+}
+
+
+#sidebar-nav ul li a:active {
+	font-weight: bold;
+	background-color: #e2e2e2;
+	color: #666666;
+}
+
+/*---Sidebar Effects---*/
+
+.sidebar-nav-current {
+	background-color: #e2e2e2;
+}
+
+
+
+/***************************************
+FOOTER ELEMENTS
+****************************************/
+
+#footer {
+	width: 960px;
+	padding-top: 20px;
+	height: 125px;
+	clear: both;
+}
+
+
+/*---Footer Newsletter---*/
+
+
+#footer-elements {
+	width: 910px;
+	margin-right: auto;
+	margin-left: auto;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e2e2e2;
+	padding-top: 20px;
+
+}
+
+#footer-newsletter {
+	width: 295px;
+	float: left;
+}
+
+#footer-newsletter #newsletter-image {
+	margin-bottom: 12px;
+}
+
+#footer-newsletter #submit-button {
+	padding-top: 8px;
+	padding-left: 197px;
+}
+
+
+/*---DDA Address---*/
+
+#dda-address {
+	width: 448px;
+	float: left;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #e2e2e2;
+	padding-left: 17px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #e2e2e2;
+
+}
+
+#dda-address p {
+	font-size: 12px;
+
+}
+
+
+/*---Social Media---*/
+
+#social-media {
+	float: right;
+}
+
+#social-media ul {
+	list-style-type: none;
+	margin-top: 11px;
+}
+
+#social-media ul li {
+	display: inline;
+	padding-right: 5px;
+	padding-left: 6px;
+	margin-top: 5px;
+}
+
+#social-media p {
+	text-align: center;
+	padding-top: -5px;
+}
+
+#social-media p img {
+	margin-top: -1px;
+}
+
+
+/*---Footer Nav---*/
+
+
+#nav-footer {
+	background-color: #D1D1D1;
+	width: 960px;
+	padding: 0px;
+	height: 50px;
+	clear: both;
+}
+
+#nav-footer ul {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float: left;
+}
+
+#nav-footer ul li {
+	display: inline;
+}
+
+#nav-footer ul li a {
+	text-decoration: none;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding-left: 25px;
+	line-height: 3.5em;
+}
+
+#nav-footer ul li a:hover {
+	text-decoration: underline;
+}
+
+
+/*---Footer Classes---*/
+
+.email {
+	font-size: 12px;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: right;
+	margin-right: 25px;
+	float: right;
+	margin-top: 0px;
+	line-height: 4em;
+	color: #666666;
+}
+
+.bold-arial {
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/***************************************
+FORMS
+****************************************/
+
+.mandatory-field {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	font-style: italic;
+	margin: 0px;
+	padding: 0px;
+	color: #666666;
+	font-weight: bold;
+}
+
+label {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #666666;
+	padding-right: 10px;
+	}
+
+.message-field {
+	width: 380px;
+	height: 100px;
+	padding-top: 10px;
+}
+
+.text-field {
+	width: 380px;
+	height: 35px;
+}
+
+.table-line  {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e2e2e2;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.message-field, .text-field {
+	font-size: 14px;
+	color: #666666;
+	padding-left: 10px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	border-radius: 5px;
+	background-color: #EEEEEE;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #CECECE;
+	border-left-color: #CECECE;
+	font-style: italic;
+}
+
+#Type-of-Enquiry {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	width: 200px;
+	font-style: italic;
+}
+
+
+#submit {
+	background-image: url(../images/buttons/submit-button.png);
+	height: 35px;
+	width: 150px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+	border: none;
+	font-size: 13px;
+	font-weight: bold;
+	border-radius: 5px;
+	margin-right: 18px;
+}
+
+#submit:hover {
+	cursor:pointer;
+	box-shadow: 0px 3px 3px #999999;
+}

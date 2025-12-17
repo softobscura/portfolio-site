@@ -1,0 +1,117 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+html, body {
+  height: 100%;
+}
+
+.anduze {
+  background: url('../img/anduze-color.jpg?1456100367');
+  position: absolute;
+  z-index: -1;
+  min-width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.anduze-sp {
+  background: url('../img/anduze-sepia.jpg?1455886050');
+  position: absolute;
+  z-index: -1;
+  min-width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.box-1 {
+  overflow: hidden;
+  *zoom: 1;
+  border: 4px solid #939598;
+  margin: 50px auto 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  height: auto;
+  padding: 15px;
+}
+@media screen and (min-width: 420px) {
+  .box-1 {
+    max-width: 360px;
+  }
+}
+
+.box-1 h1 {
+  color: #939598;
+  font-family: "wes_fymedium", sans-serif;
+  font-size: 3em;
+  letter-spacing: 2px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 420px) {
+  .box-1 h1 {
+    font-size: 4em;
+  }
+}
+
+.box-1 p {
+  color: #939598;
+  font-family: "Libre Baskerville", serif;
+  font-size: .85em;
+  line-height: 1.25em;
+  text-align: center;
+}
+@media screen and (min-width: 420px) {
+  .box-1 p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+}
+
+.box-1 .intro {
+  padding-top: 25px;
+  border-top: 1px solid #939598;
+  font-family: "wes_fymedium", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.box-1 .end {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #939598;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.horse {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100px;
+}
+@media screen and (min-width: 420px) {
+  .horse {
+    width: 120px;
+  }
+}

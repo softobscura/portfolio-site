@@ -1,0 +1,79 @@
+@import 'utilities/_variables';
+
+///////////////////////////////
+///// Contact
+//////////////////////////////
+
+.section-content {
+	margin-top: 25px;
+}
+
+.sub-headline-style {
+    @include breakpoint($breakpoint-level-3) {
+          display: block;
+    }
+}
+
+footer {
+	//background-color: rgba(234, 86, 86, .7); // light
+	width: 100%;
+	@media screen and (min-width: 321px) {margin-top: 150px;}
+	@media screen and (min-width: 390px) {margin-top: 180px;}
+	@media screen and (min-width: 444px) {margin-top: 190px;}
+	@include breakpoint($breakpoint-level-2) {
+		//position: absolute;
+		//bottom: 1.5%;
+		margin-top: 20px;
+	}
+	@include breakpoint($breakpoint-level-3) {
+		//position: absolute;
+		//bottom: 1.5%;
+		margin-top: 120px;
+	}
+	@include breakpoint($breakpoint-level-4) {
+		//position: absolute;
+		//bottom: 1.5%;
+		margin-top: 100px;
+	}
+}
+
+// White Text Box
+.section-content::before {
+	// 1. Default
+	min-height: 740px;
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint($breakpoint-level-1) {min-height: 840px + 10px;}
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint($breakpoint-level-2) {min-height: 890px - 65px;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 580px + 210px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 900px;}
+}
+
+// Gold to Froly to Gold
+.section-content::after {
+	// 1. Default
+	min-height: 740px;
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint($breakpoint-level-1) {min-height: 905px + 14px;} // red
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint($breakpoint-level-2) {min-height: 970px - 65px;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 562px + 210px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 562px + 305px;}
+}
+
+// Gold to Froly
+.article-colored-box {
+	// 1. Default
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint($breakpoint-level-1) {min-height: 875px + 10px;}
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint($breakpoint-level-2) {min-height: 930px - 65px;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 580px + 210px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 580px + 325px;}
+}

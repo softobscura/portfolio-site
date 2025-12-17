@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Basic Page Needs  ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ASC Design Studio Graphic + Web Design</title>
+    <meta name="description" content="I'm Anthony, a Melbourne based designer, specializing in print and web design for small-medium businesses and startups.">
+    <meta name="keywords" content="Anthony, Crisostomo, Anthony Crisostomo, freelance, website, web design, front end, branding, logos, graphics, illustration, websites, digital, designer, businesses, start-ups, Melbourne, North Melbourne, Darebin">
+    <!-- for FF, Chrome, Opera -->
+    <link rel="icon" type="image/png" href="ASC-logo-sm.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="ASC-logo-med.png" sizes="32x32">
+    <!-- for IE -->
+    <link rel="icon" type="image/x-icon" href="ASC-logo-med.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="ASC-logo-med.ico">
+    <!-- Mobile Specific Metas  ================================================== -->  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
+    <!-- CSS  ================================================== -->        
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Fjalla+One'  type='text/css'>
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic'  type='text/css'>
+    <!-- JavaScript  ================================================== --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+    <body class="">
+        
+        <div class="box-con">
+            <div class="box-1">
+                <p class="intro">Hey there</p>
+                <!--<h1>Anais</h1>-->
+                <h1 class="first-name">Anais</h1>
+                <img src="img/horse.svg" class="horse">
+                <p class="end">When are you coming back? <br> 
+                It's been a while.</p>
+                <p id="answer"></p>                
+            </div>
+        </div>
+        <div class="anduze"></div>
+        <div class="anduze-sp"></div>
+<!--         <div class="anduze-sepia"></div> -->
+<!--         <img src="img/anduze.jpg" class="anduze">   -->      
+        <script>
+            window.onload = function() {
+                var returnDate = prompt("When are you coming back?");
+                var returnDate; 
+                document.getElementById("answer").innerHTML = "Really? " + returnDate + " is too long!";
+            }
+            $(document).ready(function() {
+                 $("#answer").addClass("animated pulse infinite");
+                 $(".horse").addClass("animated bounce infinite");
+            });
+
+            $(function () {
+                var $element = $('.anduze-sp');
+                setInterval(function () {
+                    $element.fadeIn(1000, function () {
+                        $element.fadeOut(1500, function () {
+                            $element.fadeIn(1500)
+                        });
+                    });
+                }, 3000);
+            });
+
+       </script>
+    </body>
+</html>

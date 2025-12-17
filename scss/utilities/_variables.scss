@@ -1,0 +1,359 @@
+@import 'breakpoint';
+@import 'compass';
+@import 'susy';
+
+// TYPOGRAPHY
+$font-family-primary: 'wes_fyregular', fallback sans-serif;
+$font-family-secondary:  'questa_granderegular', fallback serif;
+$font-family-tertiary: 'Libre Baskerville', serif;
+$font-family-quaternary: 'Libre Baskerville', serif;
+$font-family-five: 'Fjalla One', sans-serif;
+//$font6: 'Playfair Display', serif;
+
+// Color Theme
+$antique-brass: #c9915e; // the sharpened part of the eraser
+$buttercup:     #f3a61e; // body of the pencil, actual color of the pencil itself
+$cream:         #fffcd5; // good for background colors
+$froly:         #f26f6f; // the color of the eraser, previous colour was 
+						 // #f45357
+$masala:        #444240; // the lead or the sharpened part
+
+$marigold:      #b8822c; // metal part close to the eraser
+$marigold-d1:	shade($marigold, 10%);
+$marigold-d2:	shade($marigold, 15%);
+
+$marigold-l1:	lighten($marigold, 5%);	 //
+$marigold-l2:	lighten($marigold, 10%);
+$marigold-l3: lighten($marigold, 20%);
+
+$marigold-s1: lighten(#d49e49, 5%);
+$marigold-s2: lighten(#d49e49, 10%);
+
+$mid-gray:      #636467; // medium gray value, maybe for captions or small lines of text;
+$white:         #ffffff; // white
+$black:         #000000; // black
+
+// Color Common Text
+$black: 		#000000;
+$gray-medium: 	#939598; // Most Used!!!
+$gray-medium-darker: shade($gray-medium, 32%);
+$gray-light: 	#c7c8ca;
+$white: 		#ffffff;
+$light-gray: 	#e2e2e2;
+$gray1: #2b1b17;
+
+// Data Direct Australia
+$dda-gray: 			#c7c8ca;
+$dda-red:			#990033;
+$dda-background: 	#e2e2e2;
+
+//Numbers
+$add-height-1: 50px;
+
+// Other Colors
+$etsy1: #db6e07;
+$etsy2: rgb(204,76,8);;
+$opacity-block-1: rgba(150, 75, 75, .2);
+$gr-background: #323133;
+$gr-background-2: #0b5a86;
+
+// Breakpoint or Media Queries
+$breakpoint-max-width-1: max-width 767px; // Max Width of 600px
+$breakpoint-min-width-1: min-width 767px; // Max Width of 600p
+$breakpoint-level-1: 321px;		// 321px to 480px
+$breakpoint-level-1A: 360px;
+$breakpoint-level-1B: 404px;
+$breakpoint-level-2: 481px; 	// 481px to 767px
+$breakpoint-level-2A: 490px;
+$breakpoint-level-2B: 681px;
+$breakpoint-level-3: 768px; 	// 768px to 1023px, at 768px, the 768px continer kicks in
+$breakpoint-level-4: 1024px;	// 1025px and up
+
+@include border-box-sizing;
+
+// Susy
+$susy: (
+  // columns: 16, 
+  // debug: (image: show),
+  // gutters: 1/2,
+  math: fluid,
+  global-box-sizing: border-box,
+  key: value,
+  output: overlay,
+  use-custom: (rem: true)
+);
+
+///////////////////////////////
+///// Clearfix
+//////////////////////////////
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+///////////////////////////////
+///// Media Queries Shortcuts
+//////////////////////////////
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width: 489px) {
+
+}
+@media screen and (min-width: 490px) and (max-width: 767px) {
+  
+}
+
+// @include breakpoint($breakpoint-level-1) {
+
+// }
+
+// .hide {
+//  display: none;
+// }
+
+
+///////////////////////////////
+///// Miscellaneous
+//////////////////////////////
+
+// .scss files using font-families are: //
+// _part_B2_navigation.scss
+// _part_C_layouts.scss
+// _part_F_footer.scss
+// _part_G_typography.scss
+
+// .section-content {
+//   background-color: $opacity-block-1;
+// }
+
+// .testing {
+//     @include clearfix;
+//   }
+
+// .image-container {
+//     padding-left: 20px;    
+//     position: absolute;
+//     bottom: 20px;
+// }
+
+// .image-container-item {
+//     width: (657px/2);
+//     height: (108px/2);
+//     background-image: url('../img/test-files/logo-test.png');
+//     background-size: contain;
+// }
+
+// footer {
+//   @media screen and (min-width: 1024px) {margin-top: 120px;}
+// }
+
+//    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+//    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic' rel='stylesheet' type='text/css'>
+
+// .section-content-image-dda {
+//     width: 65%;
+//     height: 65%;
+//     margin: 0 auto 0 auto;
+//     background-image: url('../img/test-files/logo-test.png');
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//     display: block;
+// }
+
+// @include transition(all 1s ease-in-out);
+
+// .sticky-footer-td {
+//  display: none;
+//  @media screen and (min-width: 768px) {
+//    display: block;
+//    position: absolute;
+//    height: 100%;
+//    width: 100%;
+//    bottom: 0;
+//    // background-color: red;
+//    background-color: $black;
+//    z-index: -10;
+//  }
+// }
+
+// Navigation Colors
+// $nav-color-1: rgba(234, 86, 86, 1); // light
+// $nav-color-2: rgba(242, 111, 111, 1); // lighter
+// $nav-color-3: rgba(240, 70, 73, 1); // medium
+// $nav-color-4: rgba(220, 73, 77, 1); //darkest
+
+// $susy2 : (
+//   columns: 6, 
+//   debug: (image: show),
+//   global-box-sizing: border-box,
+//   key: value,
+//   output: overlay,
+//   use-custom: (rem: true)
+// );
+
+// Snippets
+
+// background-color: rgba(153, 0, 51, 0.1);
+
+
+// Miscellaneous Styles
+// .window-stats {
+//  background-color: $dda-red;
+//  border: 3px solid $cream;
+//  color: $white;
+//  font-family: 'Open Sans', sans-serif;
+//  font-size: 1em;
+//  height: auto;
+//  left: -5px;
+//  padding: 10px;
+//  position: fixed;
+//  bottom: 0px;
+//  width: auto;
+//  z-index: 200;
+// }
+
+// Text Before or After
+
+  // @include breakpoint($breakpoint-level-1) {
+ //     .text-guide::before {
+ //        content: "100%";
+ //        padding-left: 20px;
+
+ //      }
+ //    }
+
+ //    @include breakpoint($breakpoint-level-2) {
+ //     .text-guide::before {
+ //        content: "100%";
+ //        padding-left: 20px;
+
+ //      }
+ //    }
+
+ //    @include breakpoint($breakpoint-level-3) {
+ //     .text-guide::before {
+ //        content: "768";
+ //        padding-left: 20px;
+
+ //      }
+ //    }
+
+ //    @include breakpoint($breakpoint-level-4) {
+ //     .text-guide::before {
+ //        content: "1024";
+ //        padding-left: 20px;
+ //      }
+ //    }
+
+
+// #section-content-image {
+//     padding-left: 20px;    
+//     position: absolute;
+//     bottom: 20px;
+// }
+
+// #section-content-image-dda {
+//     width: (657px/2);
+//     height: (108px/2);
+//     background-image: url('../img/test-files/logo-test.png');
+//     background-size: contain;
+// }
+
+// .article-black-box {
+
+// }
+
+// .article-black-box::after {
+//   content: "";
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   background-color: red;
+//   top: 0;
+//   z-index: -5;
+// }
+
+// .article-black-box::after {
+//  //background-color: $white;
+//  background-color: green;
+//  display: block;
+//  @include transform-origin(50%, 50%);
+//  position: absolute;
+//  @include transform(rotate(-0deg));  // Originally at -3.5deg
+//  @include transition(all 1s ease-in-out);
+//  content: "";
+//  height: auto;
+//  left: -50%;
+//  top: 80px;
+//  width: 200%;
+//  z-index: -1;
+//  //margin-bottom: 50px;
+//}
+
+//$auto: auto;
+
+// .section-master {
+//  height: auto;
+//  width: 100%;
+//  //background-color: blue;
+//  //position: relative;
+// }
+
+// .section-content-main {
+//  height: 70%;
+// }
+
+// .section-master::before {
+//  //background-color: $white;
+//  background-color: $white;
+//  display: block;
+//  @include transform-origin(50%, 50%);
+//  position: absolute;
+//  @include transform(rotate(-15deg));  // Originally at -3.5deg
+//  @include transition(all 1s ease-in-out);
+//  content: "";
+//  //min-height: 100px;
+//  height: inherit;
+//  left: -50%;
+//  top: 80px;
+//  width: 200%;
+//  z-index: 1000;
+//  margin-bottom: 50px;
+// }
+
+// .section-content-main::before {
+//  //background-color: $white;
+//  background-color: $marigold;
+//  display: block;
+//  @include transform-origin(50%, 50%);
+//  position: absolute;
+//  @include transform(rotate(15deg));  // Originally at -3.5deg
+//  @include transition(all 1s ease-in-out);
+//  content: "";
+//  //min-height: 100px;
+//  height: inherit;
+//  left: -50%;
+//  top: 80px;
+//  width: 200%;
+//  z-index: -2;
+//  margin-bottom: 50px;
+// }
+
+// .section-master::after {
+//  //background-color: $white;
+//  background-color: green;
+//  display: block;
+//  @include transform-origin(50%, 50%);
+//  position: absolute;
+//  @include transform(rotate(-15deg));  // Originally at -3.5deg
+//  @include transition(all 1s ease-in-out);
+//  content: "";
+//  min-height: $auto;
+
+//  left: -50%;
+//  top: 80px;
+//  width: 200%;
+//  z-index: -100;
+//  margin-bottom: 50px;
+// }

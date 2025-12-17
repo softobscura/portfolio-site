@@ -1,0 +1,63 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><div id="footer">
+        
+        <div id="footer-elements"><!--start of footer-elements-->
+          
+          <div id="footer-newsletter">
+          
+              <img src="../images/footer-elements/newsletter-sign-up.png" width="154" height="9" alt="newsletter-sign-up" id="newsletter-image"/>
+              
+              <img src="../images/footer-elements/newsletter-field-w-text.gif" width="277" height="30" alt="newsletter-field" id="newsletter-field"/>
+              
+              <img src="../images/buttons/newsletter-submit-DDA-Red.png" alt="newsletter-submit" width="80" height="20" id="submit-button"/>
+          
+          </div><!--end of footer-newsletter-->
+          
+          
+          <div id="dda-address">
+          
+          <img src="../images/footer-elements/footer-DDA.gif" width="170" height="12" alt="DDA-Footer" />
+          
+          <br />
+<p><span class="bold-arial">Phone</span> +61 3 9485 4900 &nbsp;&nbsp; <span class="bold-arial">Fax</span> +61 3 9480 0082&nbsp;&nbsp; <span class="bold-arial">Email&nbsp;</span><a href="mailto:dda@datadirect.com.au" class="email">dda@datadirect.com.au</a><br />
+          31-33 Chifley Drive, Preston, Victoria 3072 <br />
+
+          P.O. Box 2095  
+          </p>
+          </div><!--end of dda-address-->
+
+        <div id="social-media"><!--Social-Media-Icons-Start-->
+            <p><img src="../images/footer-elements/connect-with-us.gif" alt="connect-with-us" width="128" height="13" /></p>
+            
+            
+            <ul>
+                <li><a href="#"><img src="../images/icons/social media/facebook.gif" width="20" height="40" alt="facebook" /></a></li>
+                <li><a href="https://plus.google.com" target="_new"><img src="../images/icons/social media/google-plus.gif" width="20" height="40" alt="google-plus" /></a></li>
+                <li><a href="#"><img src="../images/icons/social media/linked-in.gif" width="20" height="40" alt="linked-in" /></a></li>
+                <li><a href="#"><img src="../images/icons/social media/twitter.gif" width="20" height="40" alt="twitter" /></a></li>
+            </ul>
+        
+        </div><!--end-of-Social-Media-Icons-->
+          
+          
+          
+          </div><!--end of footer-elements-->
+      
+
+
+
+</div><!--end of footer-->
+
+		<div id="nav-footer"><!--footer-nav start-->
+            
+            <ul>
+              <li><a href="../index.htm">Home</a></li>
+              <li><a href="../about-dda.htm">About Us</a></li>
+              <li><a href="../news.htm">News</a></li>
+              <li><a href="../services.htm">Services</a></li>
+              <li><a href="../resources.htm">Resources</a></li>
+              <li><a href="../contact.htm">Contact Us</a></li>
+            </ul>
+			
+            <p class="copyright">&copy; 2013 Data Direct Australia. All rights reserved.</p>
+		
+        </div><!--footer-nav-end-->

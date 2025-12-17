@@ -1,0 +1,86 @@
+@import 'utilities/_variables';
+
+///////////////////////////////
+///// shop
+//////////////////////////////
+
+.section-content {
+		margin-top: 25px;
+	@media screen and (min-width: 768px) {
+		margin-top: 0px;
+	}
+}
+
+footer {
+	// background-color: rgba(234, 86, 86, .1); // light
+	width: 100%;
+	@media screen and (min-width: 335px) {margin-top: 150px;}
+	@include breakpoint($breakpoint-level-2) {
+		//position: absolute;
+		//bottom: 1.5%;
+		margin-top: 20px;
+	}
+	@include breakpoint($breakpoint-level-3) {
+		//position: absolute;
+		//bottom: 1.5%;
+		margin-top: 110px;
+	}
+	@include breakpoint($breakpoint-level-4) {
+		//position: absolute;
+		margin-top: 130px;
+	}
+}
+
+@media screen and (min-width: 320px) {
+      .shop-holder-gray-text {
+          margin-top: 0px;  
+      }
+    }
+
+@media screen and (min-width: 768px) {
+      .sub-headline, .sub-headline-shop {
+          display: none;
+          // visibility: hidden;
+      }
+    }
+
+// White Text Box
+.section-content::before {
+	// 1. Default
+	min-height: 850px;
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint($breakpoint-level-1) {min-height: 840px + 58px;} 
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint($breakpoint-level-2) {min-height: 890px;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 580px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 580px;}
+}
+
+// Gold to Froly to Gold
+.section-content::after {
+	// 1. Default
+	min-height: 850px;
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint($breakpoint-level-1) {min-height: 905px + 65px;} // red
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint($breakpoint-level-2) {min-height: 970px;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 562px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 562px;}
+}
+
+// Gold to Froly
+.article-colored-box {
+	// 1. Default
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint($breakpoint-level-1) {min-height: 875px + 60px;}
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint($breakpoint-level-2) {min-height: 930px;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 580px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 580px;}
+}

@@ -1,0 +1,215 @@
+@import 'utilities/_variables';
+
+.sticky-footer {
+	display: none;
+	@media screen and (max-width: 480px) {
+		// background-color: red;
+	 	display: block;
+		position: absolute;
+		height: 40%;
+		width: 100%;
+		bottom: 0;
+		background-color: $black;
+		z-index: -10;
+	}
+}
+
+
+//---".footer-distributed" is the Main Container---//
+
+.footer-distributed {
+// background-color: rgba(153, 0, 51, 0.5);
+// background-color: red;
+// font-family: 'Georgia', fallback sans-serif;
+// font: normal 16px sans-serif;$gray1;
+// margin-left: auto;
+// margin-right: auto;
+// bottom: 0;
+// background-color: rgba(0, 0, 0, 0.8);
+// background-color: green;
+// min-height: 100px;
+	@include font-primary;
+	// text-transform: lowercase;
+	position: relative;
+	margin-top: 120px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: left;
+	@include breakpoint($breakpoint-level-1) {
+		//margin-top: 110px;
+	}
+	@include breakpoint($breakpoint-level-2) {
+		//margin-top: 120px;
+	}
+
+	@include breakpoint($breakpoint-level-3) {
+		margin-top: 0px;
+	}
+	@include breakpoint($breakpoint-level-4) {
+		//margin-top: 20px;
+	}
+}
+
+.footer-left p {
+	color: $white;
+	font-size: 14px;
+	margin: 0;
+}
+
+//---".footer-right" contains all the icons---//
+
+.footer-right {
+// max-width: 180px;
+// background-color: limegreen;	
+	float: right;
+	margin-top: 6px;
+	@include breakpoint($breakpoint-level-3) {
+		margin-right: span(1 of 14) + gutter(14);
+	}
+
+	@include breakpoint($breakpoint-level-4) {
+		margin-right: span(1 of 16) + gutter(16);
+		margin-top: 0px;
+	}
+}
+
+.footer-right a {
+	// background-color: $dda-red;
+	color: $white;
+	display: inline-block;
+	font-size: 1.25em;
+	height: 45px;
+	width: 35px;
+	line-height: 45px;
+	margin-left: 6px;
+	text-align: center;
+	margin-top: -15px;
+	}
+
+
+
+.footer-right a:hover {
+	// background-color: $dda-red;
+	// border-radius: 100%;
+	background-color: $marigold-d2;
+	@include transition(all 1s ease-in-out);
+}
+
+// Etsy
+.etsy-size {
+	font-size: 1em !important;
+}
+
+
+// Society6 Logo
+.society6-logo {
+	// line-height: 35px;
+	// height: 35px;
+	// width: 35px;
+	// background-color: yellow !important;
+	// display: inline-block;
+	// margin-top: 6px !important;
+	position: relative;
+	top: 15px;
+	background: url('../img/logos/society6-x2.png') no-repeat center;
+	background: url('../img/logos/society6.svg') no-repeat center;
+	background-size: 100% auto;
+}
+
+// Graphicriver
+
+.graphicriver-logo {
+	// line-height: 35px;
+	// height: 35px;
+	// width: 35px;
+	// background-color: yellow !important;
+	// display: inline-block;
+	// margin-top: 6px !important;
+	// overflow: display;
+	// height: 60px !important;
+	// width: 35px;
+	// background-color: green !important;
+	position: relative;
+	top: 20px;
+	//background: url('../img/logos/graphicriver-bw-x2.png') no-repeat center;
+	background: url('../img/logos/graphicriver-bw.svg') no-repeat;
+	background-size: 100% auto;
+	background-position: 0px 5px;
+}
+
+//---".footer-left" contains small navigation and copyright text---//
+.footer-left {
+	// background-color: violet;
+
+	@include breakpoint($breakpoint-level-3) {
+	// width: 50%;
+	margin-left: span(1 of 14) + gutter(14);
+	}
+	@include breakpoint($breakpoint-level-4) {
+		width: 50%;
+		margin-left: span(1 of 16) + gutter(16);
+	}
+}
+
+.footer-distributed p.footer-links {
+	// margin: 0 0 10px;
+	// background-color: steelblue;
+	//text-transform: uppercase;
+	text-transform: lowercase;
+	// color: $marigold;
+	font-size: 14px;
+	padding: 0px;
+}
+
+.footer-distributed p.footer-links a {
+	color: inherit;
+	display: inline-block;
+	letter-spacing: 1px;
+	line-height: 1.8;
+	text-decoration: none;
+	@include breakpoint($breakpoint-level-3) {
+		font-size: .85em;
+	}
+
+	@include breakpoint($breakpoint-level-4) {
+		font-size: 1em;
+	}
+}
+
+.footer-links a:hover {
+	// text-decoration: underline !important;
+	// color: $dda-gray !important;
+	// border-bottom: .5px solid $white;
+	// @include transition(all 1s ease-in-out);
+	color: $marigold !important;
+}
+
+
+// Responsive
+@include breakpoint($breakpoint-max-width-1) {
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right {
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right {
+		float: none;
+		margin: 0 auto 20px auto;
+	}
+
+	.footer-distributed .footer-left p.footer-links {
+		line-height: 1.8;
+	}
+}
+
+// Extra Media Query very tiny screen in case
+.footer-right a {
+	@include tiny-screen {
+		margin-top: 9px;
+	}
+}
+
+.asc-copyright {
+	font-size: 10px;
+	// text-transform: uppercase !important;
+}

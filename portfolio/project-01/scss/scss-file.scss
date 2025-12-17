@@ -1,0 +1,120 @@
+@import 'utilities/_variables';
+
+html, body {
+  height: 100%;
+}
+
+html {
+  //@include background(image-url("anduze-color.jpg") no-repeat);
+}
+
+// .anduze {
+//   position: absolute;
+//   z-index: -1;
+//   top: 0;
+//   left: 0;
+// }
+
+.anduze {
+    @include background(image-url("anduze-color.jpg"));
+    // background: cover;
+    position: absolute;
+    z-index: -1;
+    min-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.anduze-sp {
+    @include background(image-url("anduze-sepia.jpg"));
+    // background: cover;
+    position: absolute;
+    z-index: -1;
+    min-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+
+
+// #bg-anduze {
+//   @include background(image-url("anduze.jpg") no-repeat);
+// }
+
+// This is the main container for the box
+
+.anduze-sp {
+    // @include background(image-url("anduze.jpg") no-repeat);
+}
+
+.box-1 {
+  //position: relative;
+  //z-index: 100;
+  @include clearfix;
+  border: 4px solid $gray-medium;
+  margin: 50px auto 0 auto;
+  background-color: rgba(255,255,255,0.8);
+  width: 80%;
+  height: auto;
+  padding: 15px;
+  @media screen and (min-width: 420px) {
+    max-width: 360px;
+  }
+}
+
+// Typography
+.box-1 h1 {
+  color: $gray-medium;
+  font-family: $font-family-six;
+  font-size: 3em;
+  letter-spacing: 2px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  @media screen and (min-width: 420px) {
+    font-size: 4em;
+  }
+
+}
+
+.box-1 p {
+  color: $gray-medium;
+  font-family: $font-family-quaternary;
+  font-size: .85em;
+  line-height: 1.25em;
+  text-align: center;
+  @media screen and (min-width: 420px) {
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }  
+}
+
+.box-1 .intro {
+  padding-top: 25px;
+  border-top: 1px solid $gray-medium;
+  font-family: $font-family-six;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.box-1 .end {
+  padding-bottom: 20px;
+  border-bottom: 1px solid $gray-medium;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.horse {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100px;
+  @media screen and (min-width: 420px) {
+    width: 120px;
+  }
+}
