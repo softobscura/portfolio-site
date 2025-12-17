@@ -1,0 +1,207 @@
+@import 'utilities/_variables';
+
+///////////////////////////////
+///// portfolio
+//////////////////////////////
+
+h2 {
+	@include breakpoint(min-width 768px) {display: none;}
+}
+
+
+.section-content {
+	margin-top: 25px;
+}
+
+.sub-headline-style {
+    @include breakpoint($breakpoint-level-3) {
+          display: block;
+    }
+}
+
+footer {
+	// background-color: rgba(234, 86, 86, .7); // light
+	width: 100%;
+	margin-top: -25px;
+	@media screen and (min-width: 321px) and (max-width: 369px) {
+	  	margin-top: -20px;
+	}
+	@media screen and (min-width: 370px) and (max-width: 434px) {
+	  	margin-top: -10px;
+	}
+	@media screen and (min-width: 435px) and (max-width: 480px) {
+	  	margin-top: 140px;
+	}
+	@media screen and (min-width: 481px) and (max-width: 550px) {
+		//position: absolute;
+		//bottom: 1.5%;
+		margin-top: 140px;
+	}
+	@media screen and (min-width: 551px) and (max-width: 629px) {
+		//position: absolute;
+		//bottom: 1.5%;
+		margin-top: 120px;
+	}
+		@media screen and (min-width: 629px) and (max-width: 767px) {
+		//position: absolute;
+		//bottom: 1.5%;
+		margin-top: 150px;
+	}
+	@include breakpoint($breakpoint-level-3) {
+		//position: absolute;
+		//bottom: 1.5%;
+		margin-top: 100px;
+	}
+}
+
+///////////////// gallery starts here /////////////////
+
+.wrap {
+	@include clearfix;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+
+.wrap .social ul .social__list-item img {
+	height: auto;
+	width: 100%;
+}
+
+.social {
+	margin: 0 auto;
+	@include clearfix;
+	@include container(max-width 95%);
+		@include show-grid(10);
+
+	@include breakpoint(min-width 400px) {
+		@include container(max-width 100%);
+		@include show-grid(12);
+	}
+
+	@include breakpoint($breakpoint-level-3) {
+		@include show-grid(12);
+	}
+
+	@include breakpoint($breakpoint-level-4) {
+		@include show-grid(12);
+	}
+}
+
+.social__list-item {
+	// background-color: yellow;
+	height: auto;
+	@include gallery(5 of 10 gutters 1.5);
+	margin-bottom: gutter(4);
+	display: block;
+	cursor: pointer;
+
+	@include breakpoint(min-width 400px) {
+		@include gallery(3 of 12 gutters 1);
+	}
+
+	@include breakpoint(min-width 460px) {
+		@include gallery(3 of 12 gutters 1);
+		margin-bottom: gutter(5); 
+	}
+
+	@include breakpoint($breakpoint-level-3) {
+		@include gallery(3 of 12 gutters 1);
+		margin-bottom: gutter(6); 
+	}
+	@include breakpoint($breakpoint-level-4) {
+		@include gallery(3 of 12 gutters 1.25);
+		margin-bottom: gutter(9); 
+	}
+}
+
+// White Text Box
+.section-content::before {
+	// 1. Default
+	min-height: 820px + 50px;
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint(min-width 321px) {min-height: 840px + 20px + $add-height-1;}
+	@include breakpoint(min-width 330px) {min-height: 840px + 40px + $add-height-1;}
+	@include breakpoint(min-width 340px) {min-height: 840px + 60px + $add-height-1;}
+	@include breakpoint(min-width 350px) {min-height: 840px + 80px + $add-height-1;}
+	@include breakpoint(min-width 360px) {min-height: 940px + $add-height-1}
+	@include breakpoint(min-width 370px) {min-height: 985px + $add-height-1;}
+	@include breakpoint(min-width 400px) {min-height: 460px + 50px + $add-height-1;}
+	@include breakpoint(min-width 435px) {min-height: 520px + $add-height-1;}
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint(min-width 630px) {min-height: 560px + $add-height-1;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 480px + 20px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 620px;}
+}
+
+// Gold to Froly to Gold
+.section-content::after {
+	// 1. Default
+	min-height: 820px + 50px;
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint(min-width 321px) {min-height: 905px + 20px + $add-height-1;}
+	@include breakpoint(min-width 330px) {min-height: 905px + 40px + $add-height-1;}
+	@include breakpoint(min-width 340px) {min-height: 905px + 60px + $add-height-1;}
+	@include breakpoint(min-width 350px) {min-height: 905px + 80px + $add-height-1;}
+	@include breakpoint(min-width 360px) {min-height: 1010px + $add-height-1;}
+	@include breakpoint(min-width 370px) {min-height: 1050px + $add-height-1;}
+	@include breakpoint(min-width 400px) {min-height: 525px + 50px + $add-height-1;}
+	@include breakpoint(min-width 435px) {min-height: 585px + $add-height-1;} // red
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint($breakpoint-level-2) {min-height: 593px + $add-height-1;} // red
+	@include breakpoint(min-width 630px) {min-height: 640px + $add-height-1;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 462px + 20px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 598px;}
+}
+
+// Gold to Froly
+.article-colored-box {
+	// 1. Default
+	// 2. Medium Phone -- // 321px to 480px
+	@include breakpoint(min-width 321px) {min-height: 875px + 19px + $add-height-1;}
+	@include breakpoint(min-width 330px) {min-height: 875px + 39px + $add-height-1;}
+	@include breakpoint(min-width 340px) {min-height: 875px + 59px + $add-height-1;}
+	@include breakpoint(min-width 350px) {min-height: 875px + 79px + $add-height-1;}
+	@include breakpoint(min-width 360px) {min-height: 975px + $add-height-1;}
+	@include breakpoint(min-width 370px) {min-height: 975px + 42px + $add-height-1;}
+	@include breakpoint(min-width 400px) {min-height: 493px + 50px + $add-height-1;}
+	@include breakpoint(min-width 435px) {min-height: 554px + $add-height-1;} // gray
+	// 3. Big Phone -- // 481px to 767px
+	@include breakpoint($breakpoint-level-2) {min-height: 557px + $add-height-1;} // gray
+	@include breakpoint(min-width 630px) {min-height: 600px + $add-height-1;}
+	// 4. Tablet -- // 768px to 1023px
+	@include breakpoint($breakpoint-level-3) {min-height: 480px + 20px;}
+	// 5. Desktop -- // Layout 1024px and up
+	@include breakpoint($breakpoint-level-4) {min-height: 620px;}
+}
+
+
+// .gallery-caption {
+// 	// @include font-five;
+// 	// font-family: $font-family-quaternary !important;
+// 	text-align: center !important;
+// 	padding: 0;
+// 	margin: 4px 0 0 0;
+// 	font-size: .85em;
+// 		@include breakpoint($breakpoint-level-1) {
+// 			font-size: .85em;
+// 	}
+// 		@include breakpoint($breakpoint-level-2) {
+// 			font-size: .85em;
+// 	}
+// 		@include breakpoint($breakpoint-level-3) {
+// 			font-size: .95em;
+// 	}
+// 		@include breakpoint($breakpoint-level-4) {
+// 			font-size: .95em;
+// 			//color: blue;
+// 	}
+// }

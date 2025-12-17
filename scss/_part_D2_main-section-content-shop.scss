@@ -1,0 +1,104 @@
+@import 'utilities/_variables';
+
+.shop-holder-container {
+    margin-top: 25px;
+}
+
+.shop-text {
+    clear: both;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+        padding-top: 25px;
+    }
+}
+
+// Inside the container starts here
+.shop-holder {
+    @include margin-padding-zero;
+}
+
+.shop-holder li {
+    @include margin-padding-zero;
+    // background-color: yellow;
+    list-style: none;
+    width: 100%;
+}
+
+.shop-holder li a {
+    @include margin-padding-zero;
+    text-decoration: none;
+    list-style: none;
+}
+
+ul li a.etsy-logo-big {
+    background: url('../img/logos/etsy-logo-white.png') no-repeat;
+    background: url('../img/logos/etsy-logo-white.svg') no-repeat;
+    background-position: center 35px;
+    @media screen and (min-width: 768px) {
+        float: left;
+    }
+    background-color: $etsy1;
+}
+
+ul li a.society6-logo-big {
+    @media screen and (max-width: 767px) {
+        margin-top: 25px;
+    }
+    background: url('../img/logos/society6-white-x2.png') no-repeat;
+    background: url('../img/logos/society6-white.svg') no-repeat;
+    background-position: center 15px;
+    background-size: 170px auto;
+    @media screen and (min-width: 768px) {
+        float: right;
+    }
+    background-color: $black;
+}
+
+ul li a.graphicriver-logo-big {
+    width: 100%;
+    clear: left;
+    margin-top: 25px;
+    background: url('../img/logos/graphicriver-outlined-color-x3.png') no-repeat;
+    background-position: 47.5% -5px;
+    background-size: 260px auto;
+    background-color: $gr-background;
+    display: block;    
+    height: 160px;
+    color: $white;
+    font-family: $font-family-primary;
+    text-align: center;
+    padding-top: 120px;
+    @media screen and (min-width: 768px) {
+        float: right;
+    }
+}
+
+ul li a.etsy-logo-big, ul li a.society6-logo-big {
+    @media screen and (min-width: 768px) {
+        width: 47.5%;
+    }
+    display: block;    
+    height: 160px;
+    width: 100%;
+    color: $white;
+    font-family: $font-family-primary;
+    text-align: center;
+    padding-top: 125px;
+}
+
+// Visited Links
+ul li a.etsy-logo-big:visited, ul li a.society6-logo-big:visited, ul li a.graphicriver-logo-big {
+    $color: $white;
+}
+
+ul li a.etsy-logo-big:hover, ul li a.society6-logo-big:hover, ul li a.graphicriver-logo-big:hover {
+    @include transition(all .5s ease-in-out);
+}
+
+ul li a.etsy-logo-big:hover {
+    background-color: $etsy2; // Old browsers
+}
+
+ul li a.graphicriver-logo-big:hover {
+    background-color: $gr-background-2;
+}

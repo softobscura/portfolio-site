@@ -1,0 +1,149 @@
+@import 'utilities/_variables';
+
+header {
+	@include clearfix;
+	position: relative;
+	height: 140px;
+	// background-color: rgba(153, 0, 51, 0.1); 
+	@include breakpoint($breakpoint-level-1) {
+			height: 175px;
+		}
+	@media (min-width: 481px) and (max-width: 489px) {
+			height: 200px;
+	}
+	@include breakpoint($breakpoint-level-2A) {
+	    	height: 195px;
+	    }
+	@include breakpoint($breakpoint-level-3) {
+	    	height: 160px;
+	    }
+	@include breakpoint($breakpoint-level-4) {
+	    	height: 180px;
+	    }
+}
+
+.header-logo {
+		// border-top: none;
+		// background-color: $white;
+		// background-color: $dda-red;
+		background-color: $froly;
+		// margin: 0 auto;
+		display: block;
+		cursor: pointer;
+		height: 110px;
+		width: 110px;
+		float: left;
+		//@include logo-gradient;
+		@include box-shadow(inset 0px 0px 32px 0px rgba(204,25,25,1));
+		@media screen and (max-width: 319px) {
+				position: relative;
+				left: 29%;
+		}
+		@media screen and (min-width: 320px) and (max-width: 320px) {
+		  		position: relative;
+				left: 105px;
+		}
+		// at 321px 
+		@include breakpoint($breakpoint-level-1) {
+			float: left;
+			height: 110px;
+			width: 110px;
+			margin-top: span(1 of 10);
+			margin-left: span(1 of 10);
+		}
+
+		// at 481px:
+	    @include breakpoint($breakpoint-level-2) {
+			float: left;
+			margin-top: span(1 of 12);
+			margin-left: span(1 of 12);
+			height: 130px;
+			width: 130px;
+	    }
+
+		// at 490px:
+		@include breakpoint($breakpoint-level-2A) {
+			height: 135px;
+			width: 130px;
+		}
+
+	    @include breakpoint($breakpoint-level-3) {
+	    	float: left;
+	    	height: 140px;
+			width: 135px;
+			margin-top: 0;
+			margin-left: span(1 of 14) + gutter(12);
+	    }
+
+	    @include breakpoint($breakpoint-level-4) {
+	    	height: 155px;
+			width: 150px;
+			margin-left: span(1 of 16) + gutter(16);
+	    }
+}
+
+.header-logo::after {
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+
+	// Mockup Logo
+	//background: url('../img/test-files/mail-logo.svg') no-repeat center;
+	//background-size: 90% 90%;
+	//background: url('../img/test-files/mail-logo.png') no-repeat center;
+
+	// Test Logos
+	//background: url('../img/test-files/ASC-DS-Logo-Symbol-w-Artboard-Thin-Green.svg') no-repeat center;
+	//background: url('../img/test-files/ASC-DS-Logo-Symbol-w-Artboard-Thin-Green-x-2.png') no-repeat center;
+	
+	// Live Logos
+	background: url('../img/logos/ASC-DS-Logo-Symbol-w-Artboard-Thin-x-2.png') no-repeat center;
+	background: url('../img/logos/ASC-DS-Logo-Symbol-w-Artboard-Thin.svg') no-repeat center;
+	background-size: 96% 96%;
+	
+	@include border-custom(0px, 2.25px, 2.25px, 2.25px, solid, $white);
+	@include box-shadow(rgba(black, 0.7) 0px 0px 20px, rgba(black, 0.2) 0 0 0px 0px inset);
+		@include breakpoint($breakpoint-level-1) {
+			@include border-custom(2.25px, 2.25px, 2.25px, 2.25px, solid, $white);
+		}
+		@include breakpoint($breakpoint-level-2A) {
+			//visibility: hidden;
+			//display: none;
+
+			// Test Logos
+			// background: url('../img/test-files/ASC-DS-Logo-Full-Blue.png') no-repeat center;
+			// background: url('../img/test-files/ASC-DS-Logo-Full-Blue.svg') no-repeat center;
+
+			// Live Logos
+			background: url('../img/logos/ASC-DS-Logo-Full-x-2.png') no-repeat center;
+			background: url('../img/logos/ASC-DS-Logo-Full.svg') no-repeat center;
+			background-size: 96% 96%;
+		}
+		@include breakpoint($breakpoint-level-3) {
+			@include border-custom(0px, 2.25px, 2.25px, 2.25px, solid, $white);
+			background-size: 98% 98%;
+		}
+		@include breakpoint($breakpoint-level-4) {
+			@include border-custom(0px, 3px, 3px, 3px, solid, $white);
+			background-size: 100% 100%;
+		}
+}
+
+// Hover Effect
+.header-logo:hover {
+	// @include box-shadow(inset 0px 0px 37px 0px rgba(204,25,25,1));
+	@include box-shadow(inset 0px 0px 10px 0px rgba(204,25,25,9)); // darker
+	@include transition(all .375s ease-in-out);
+}
+
+// Vignette
+// .header-logo:after {
+// 	content: "";
+// 	display: block;
+// 	height: 100%;
+// 	width: 100%;
+// 	box-shadow: inset 0 0 5em 1em #f45357;
+// }		
+
+// Gradient

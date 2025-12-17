@@ -1,0 +1,76 @@
+@import '_variables';
+
+// Froly Box (dda red strip for now)
+.article-colored-box {
+          // @include transform(rotate(15deg)); // Originally at -7deg
+          // content: "";
+          // height: 580px;
+          // left: -50%;
+          // top: 80px;
+          // width: 200%;
+          position: absolute;
+          @include transition(all 1s ease-in-out);
+          z-index: -2;
+          background-color: $dda-gray !important;
+          // background-color: $marigold !important;
+          @media screen and 
+                (min-width: 321px) and (max-width: 767px) {
+                    // background-color: $dda-gray !important;
+                    background-color: $marigold-s1 !important;
+                    @include box-shadow(#000000 0px 0px 5px);
+          }
+
+          // Medium Phone -- // 321px to 480px
+            @include breakpoint($breakpoint-level-1) {
+            @include transform(rotate(-10deg)); 
+            @include transition(all 1s ease-in-out);
+              //min-height: 50%;
+              left: -50%;
+              content: "";              
+              top: 64.5px;
+              width: 200%;
+            }
+
+
+          // Big Phone -- // 481px to 767px
+            @include breakpoint($breakpoint-level-2) {
+              @include transform(rotate(-10deg));
+              @include transition(all 1s ease-in-out);
+              //visibility: hidden;
+             // min-height: 50%;  // Originally at 600px
+              left: -50%;
+              content: "";
+              top: 80px;
+              width: 200%;
+
+            }
+
+          // Tablet -- // 768px to 1023px
+            @include breakpoint($breakpoint-level-3) {
+              @include transform(rotate(-7.5deg));
+              @include transition(all 1s ease-in-out);
+              
+              // background-color: $dda-red !important;
+              background-color: $froly !important;
+              @include box-shadow(inset 0px 0px 37px 0px rgba(204,25,25,1));
+              //@include box-shadow(inset 0px 0px 37px 0px saturate($froly,55%));
+              //visibility: visible;
+              //@include logo-gradient;
+              left: -50%;
+              content: "";
+              // min-height: 60%;  // Originally at 600px
+              // top: 133px;
+              top: 122px;
+              width: 200%;
+            }
+          // Desktop -- Layout 1025px and up
+           @include breakpoint($breakpoint-level-4) {
+              @include transform(rotate(-6.5deg));
+              left: -50%;
+              content: "";
+              // min-height: 60%;  // Originally at 600px
+              top: 133px;
+              width: 200%;
+           }
+            
+    }

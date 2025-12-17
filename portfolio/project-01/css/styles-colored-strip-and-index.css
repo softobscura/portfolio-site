@@ -1,0 +1,151 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.section-content {
+  margin-top: 25px;
+}
+
+@media (min-width: 768px) {
+  .sub-headline-style {
+    display: block;
+  }
+}
+
+footer {
+  width: 100%;
+}
+@media screen and (min-width: 321px) and (max-width: 350px) {
+  footer {
+    margin-top: -30px;
+  }
+}
+@media (min-width: 360px) {
+  footer {
+    margin-top: 130px;
+  }
+}
+@media screen and (min-width: 377px) and (max-width: 403px) {
+  footer {
+    margin-top: 150px;
+  }
+}
+@media (min-width: 404px) {
+  footer {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 481px) {
+  footer {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 768px) {
+  footer {
+    margin-top: 125px;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    margin-top: 130px;
+  }
+}
+
+.section-content::before {
+  min-height: 890px;
+}
+@media (min-width: 321px) {
+  .section-content::before {
+    min-height: 955px;
+  }
+}
+@media (min-width: 404px) {
+  .section-content::before {
+    min-height: 895px;
+  }
+}
+@media (min-width: 481px) {
+  .section-content::before {
+    min-height: 940px;
+  }
+}
+@media (min-width: 768px) {
+  .section-content::before {
+    min-height: 890px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-content::before {
+    min-height: 880px;
+  }
+}
+
+.section-content::after {
+  min-height: 890px;
+}
+@media (min-width: 321px) {
+  .section-content::after {
+    min-height: 1020px;
+  }
+}
+@media (min-width: 404px) {
+  .section-content::after {
+    min-height: 960px;
+  }
+}
+@media (min-width: 481px) {
+  .section-content::after {
+    min-height: 1020px;
+  }
+}
+@media (min-width: 768px) {
+  .section-content::after {
+    min-height: 872px;
+  }
+}
+@media (min-width: 1024px) {
+  .section-content::after {
+    min-height: 850px;
+  }
+}
+
+@media (min-width: 321px) {
+  .article-colored-box {
+    min-height: 989px;
+  }
+}
+@media (min-width: 404px) {
+  .article-colored-box {
+    min-height: 928px;
+  }
+}
+@media (min-width: 481px) {
+  .article-colored-box {
+    min-height: 980px;
+  }
+}
+@media (min-width: 768px) {
+  .article-colored-box {
+    min-height: 890px;
+  }
+}
+@media (min-width: 1024px) {
+  .article-colored-box {
+    min-height: 885px;
+  }
+}

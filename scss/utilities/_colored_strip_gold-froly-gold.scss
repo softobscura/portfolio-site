@@ -1,0 +1,85 @@
+@import '_variables';
+
+// Gold Text Box
+.section-content::after {
+	// min-height: 70%;
+  @include transform-origin(50%, 50%);
+  @include transform(rotate(15deg));
+  @include box-shadow(#000000 0px 0px 5px); 
+  @include transition(all 1s ease-in-out);
+  // background-color: $dda-gray;
+  // background-color: $marigold;
+  background-color: $marigold-l2;
+  @include box-shadow(inset 0px 0px 50px 0px rgba(125,77,1,1));
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -3;
+  
+  // left: -50%;
+  // width: 200%;
+  // top: 80px;
+
+  left: -75%;
+  width: 250%;
+  top: 85px;
+
+	@media screen and 
+           	(min-width: 321px) and (max-width: 767px) {
+                    // background-color: $dda-red !important;
+                    background-color: $froly;
+                    @include box-shadow(inset 0px 0px 32px 0px rgba(204,25,25,1));
+                    display: block;
+       	}
+
+    // Medium Phone -- // 321px to 480px
+    @include breakpoint($breakpoint-level-1) {
+              // min-height: 50%;
+              // @include transform(rotate(6deg));
+              // min-height: 69%;  // Originally at 595px
+              @include transform(rotate(-10deg));
+              @include transition(all 1s ease-in-out);
+              left: -50%;
+              top: 50px;
+              width: 200%;
+            }
+
+
+    // Big Phone -- // 481px to 767px
+    @include breakpoint($breakpoint-level-2) {
+              // min-height: 50%;  // Originally at 595px
+              @include transform(rotate(-10deg));
+              @include transition(all 1s ease-in-out);
+              left: -50%;
+              top: 60px;
+              width: 200%;
+          }
+
+    // Tablet -- // 768px to 1023px
+    @include breakpoint($breakpoint-level-3) {
+              // min-height: 59%;  // Originally at 595px
+              background-color: $marigold-l2 !important;
+              @include box-shadow(inset 0px 0px 50px 0px rgba(125,77,1,1));
+              // @include box-shadow(inset 0px 0px 32px 0px rgba(204,25,25,1));
+              // @include box-shadow(inset 0px 0px 37px 0px saturate($marigold,65%));
+              //@include gold-gradient;
+              @include transform(rotate(6deg));
+              @include transition(all 1s ease-in-out);
+              left: -50%;
+              // top: 122px;
+              top: 117px;
+              width: 200%;
+              display: block;
+            }
+
+    // Desktop -- Layout 1024px and up
+    @include breakpoint($breakpoint-level-4) {
+              // background-color: blue !important;
+              // @include angled-gradient;
+              // min-height: 59%;  // Originally at 595px
+              @include transform(rotate(6deg));
+              left: -50%;
+              top: 123px;
+              width: 200%;
+           }         
+}

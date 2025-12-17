@@ -1,0 +1,183 @@
+@import 'utilities/_variables';
+
+@mixin section-subheadings {
+	font-size: 1.25em;
+		@include breakpoint($breakpoint-level-1) {
+			font-size: 1.25em;
+	}
+		@include breakpoint($breakpoint-level-2) {
+			font-size: 1.375em;
+	}
+		@include breakpoint($breakpoint-level-3) {
+			font-size: 1.5em;
+	}
+		@include breakpoint($breakpoint-level-4) {
+			font-size: 1.625em;
+			//color: blue;
+	}
+}
+
+// Line Height and Font Size
+@mixin section-paragraph {
+	font-size: .925em;
+	line-height: 1.35em;
+
+	@media screen and (max-width: 480px) {
+		text-align: justify;
+	}
+		@include breakpoint($breakpoint-level-1) {
+			font-size: .925em;
+			line-height: 1.35em;
+	}
+		@include breakpoint($breakpoint-level-2) {
+			font-size: 1em;
+			line-height: 1.35em;
+	}
+		@include breakpoint($breakpoint-level-3) {
+			font-size: 1em;
+			line-height: 1.375em;
+	}
+		@include breakpoint($breakpoint-level-4) {
+			font-size: 1.125em;
+			line-height: 1.475em;
+			//color: blue;
+	}
+}
+
+// Spaces between paragraphs
+@mixin section-spacing-paragraph {
+	margin-top: .75em;
+	@include breakpoint($breakpoint-level-1) {
+		margin-top: .85em;
+	}
+	@include breakpoint($breakpoint-level-2) {
+		margin-top: .90em;
+	}
+	@include breakpoint($breakpoint-level-3) {
+		margin-top: .95em;
+	}
+	@include breakpoint($breakpoint-level-4) {
+		margin-top: 1em;
+	}
+}
+
+section h2 {
+	@include font-secondary;
+	// @include font-five;
+	// letter-spacing: .5px;
+	// color: $dda-red;
+	// color: $dda-red;
+	// color: $marigold;
+	// color: $gray-medium-darker;
+	color: $marigold-d2;
+	@include section-subheadings;
+	@include margin-padding-zero;
+	margin-top: 20px;
+	@media screen and (max-width: 480px) {
+		text-align: center;
+	}
+}
+
+section p {
+	@include font-primary;
+	@include margin-padding-zero;
+	@include section-paragraph;
+	color: $gray-medium-darker;
+	@include section-spacing-paragraph;
+}
+
+// Services Styles
+
+.section-content-services-list {
+	@include section-paragraph;
+	@include font-primary;
+	color: $gray-medium-darker;
+   	line-height: 1.25em;
+	//list-style: none;
+   	//margin-left: 0;
+   	//padding-left: 2em;
+   	//text-indent: -1em;
+}   	
+
+.scslist-icon-color {
+	// color: $marigold;
+	// color: $marigold-l3;
+	color: $gray-light;
+}
+
+// Link Styles
+.section-content-aside a.download-link {
+	//font-family: $font-family-secondary;
+	//text-transform: uppercase;
+	text-decoration: none;
+	// color: $gray-medium-darker;
+	// color: $marigold;
+	color: $marigold-d1;
+	font-size: .875em;
+}
+
+.download-link:hover {
+	// border-bottom: .75px solid $dda-red;
+	border-bottom: .75px solid $marigold-d2;
+}
+
+aside.section-content-aside p a.highlight-paragraph {
+	color: $marigold-d2;
+}
+
+aside.section-content-aside p a.highlight-paragraph:hover {
+	border-bottom: .75px solid $marigold-d2;
+}
+
+.copyright-final {
+	@include font-quaternary;
+	font-size: 12px !important;
+	line-height: 1.5em !important;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+	  .portfolio-tablet-view {
+		font-size: 1.25em !important;
+	}
+}
+
+.gallery-caption {
+	@include font-quaternary;
+	// font-family: $font-family-quaternary !important;
+	text-align: center !important;
+	padding: 0;
+	margin: 4px 0 0 0;
+	font-size: .85em;
+		@include breakpoint($breakpoint-level-1) {
+			font-size: .85em;
+	}
+		@include breakpoint($breakpoint-level-2) {
+			font-size: .85em;
+	}
+		@include breakpoint($breakpoint-level-3) {
+			font-size: .95em;
+	}
+		@include breakpoint($breakpoint-level-4) {
+			font-size: .95em;
+			//color: blue;
+	}
+}
+
+.shop-holder-gray-text-folio {
+	@include font-quaternary;
+    // font-family: $font-family-quaternary !important;
+	@media screen and (min-width: 320px) and (max-width: 767px) {
+		font-size: 1em;
+	}
+    color: $gray-medium;
+    text-align: center !important;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.shop-holder-gray-text {
+	@include font-quaternary;
+    // font-family: $font-family-quaternary !important;
+    color: $gray-medium;
+    text-align: center !important;
+}

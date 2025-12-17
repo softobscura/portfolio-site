@@ -1,0 +1,133 @@
+@import '_variables';
+
+// ==========================================================================
+// $MIXINS
+// ==========================================================================
+
+// Typography Mixin
+@mixin font-primary {
+	font-family: $font-family-primary;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin font-secondary {
+	font-family: $font-family-secondary;
+	//font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	//font-weight: 700;
+	font-style: normal;
+}
+
+
+@mixin font-tertiary {
+	font-family: $font-family-tertiary;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@mixin font-quaternary {
+	font-family: $font-family-tertiary;
+	font-weight: 400;
+	font-style: italic;
+}
+
+@mixin font-five {
+	font-family: $font-family-five;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+// Margin & Padding Zero
+@mixin margin-padding-zero {
+	margin: 0;
+	padding: 0;
+}
+
+// Border Shorthand
+@mixin border($border) {
+  border: $border;
+}
+
+// Border All Individual Properties
+@mixin border-custom($top, $right, $bottom, $left, $style, $color) {
+	border-top: $top;
+	border-right: $right;
+	border-bottom: $bottom;
+	border-left: $left;
+	border-style: $style;
+	border-color: $color;
+}
+
+@mixin tiny-screen {
+	@media only screen and (max-width: 256px) {
+		@content;
+	}
+}
+
+@mixin master-layout {
+	    @include breakpoint($breakpoint-level-1) {
+          @include container(max-width 480px);
+          @include show-grid(10);
+    }
+
+// 481px to 767px
+    @include breakpoint($breakpoint-level-2) {
+          // width: 100%;
+          @include container(max-width 640px);
+          @include show-grid(12);
+    }
+// 768px to 1023px
+    @include breakpoint($breakpoint-level-3) {
+          @include container(max-width 768px);
+          @include show-grid(14);
+    }
+
+// 1024 and up 
+    @include breakpoint($breakpoint-level-4) {
+          @include container(max-width 1024px);
+          @include show-grid(16);
+    }
+}
+
+
+// Logo-Gradient 1 Medium
+// @mixin logo-gradient {
+// 	background-color: #e04c4c;
+// 	@include filter-gradient(#e04c4c, #e04c4c, horizontal);
+// 	@include background-image(linear-gradient(left top, #e04c4c 0%, #f26e6e 50%, #e04c4c 100%));
+// }
+
+// Logo-Gradient 2 Strong 
+// @mixin logo-gradient {
+// 	background-color: #e63737;/* Old Browsers */
+// 	@include filter-gradient(#e63737, #e63737, horizontal);// IE6-9 fallback on horizontal gradient
+// 	@include background-image(linear-gradient(left top, #e63737 0%, #e64e4e 18%, #f26e6e 50%, #e64e4e 84%, #e63737 100%));
+// }
+
+// Logo-Gradient 3 Light
+// @mixin logo-gradient {
+// 	background-color: #de5454;
+// 	@include filter-gradient(#de5454, #de5454, horizontal);
+// 	@include background-image(linear-gradient(left top, #de5454 0%, #f26e6e 21%, #f26e6e 50%, #f26e6e 77%, #de5454 100%));
+// }
+
+//Logo-Gradient 4 Circle
+@mixin logo-gradient {
+	//background-color: rgba(242,110,110,1);
+	@include filter-gradient(#f26e6e, #f26e6e, horizontal);
+	@include background-image(radial-gradient(center, ellipse cover, rgba(242,110,110,1) 0%, rgba(242,110,110,1) 54%, rgba(237,87,87,1) 99%, rgba(237,87,87,1) 100%));
+}
+
+@mixin angled-gradient {
+	background-color: rgba(179,179,179,1);
+	@include filter-gradient(#b3b3b3, #e2e2e2, horizontal);
+	@include background-image(linear-gradient(left top, rgba(179,179,179,1) 0%, rgba(179,179,179,1) 21%, rgba(226,226,226,1) 65%, rgba(226,226,226,1) 100%));
+}
+
+@mixin gold-gradient {
+background-color: #bf8330;
+	@include filter-gradient(#bf8330, #bf8330, vertical);
+	@include background-image(linear-gradient(top, #bf8330 0%, #dba753 30%, #dba753 52%, #dba753 80%, #bf8330 100%));
+}

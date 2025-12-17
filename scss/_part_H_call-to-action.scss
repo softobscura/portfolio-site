@@ -1,0 +1,189 @@
+@import 'utilities/_variables';
+
+@media screen
+	and	(max-width: 320px) {
+		.call-to-action, .call-to-action-long, .call-to-action-long a {
+			display: none;
+		}
+	}
+
+@media screen
+	and	(min-width: 321px) {
+		.call-to-action {
+			// @include transform(rotate(45deg));
+			// @include transform-origin(50%, 50%);
+			// color: orange;
+			// left: -25%;
+			// margin-right: span(1 of 12);
+			// position: relative;
+			// top: 80px;
+			// width: 220px;
+			// float: right;
+	    	// margin-right: 12%;
+	    	// margin-top: 20%;
+			// background-color: limegreen;
+	    	@include clearfix;
+			width: auto;
+			height: auto;
+			margin-top: 80px;
+			text-align: center;
+			@include transform(rotate(-15deg) skew(-15deg, 5deg));
+			@media screen
+					and (min-width: 381px ) {
+						//margin-top: 90px;
+					}
+
+			@media screen 
+					and (min-width: 421px) {
+						//margin-top: 95px;
+					}
+
+			@media screen
+					and (min-width: 461px ) {
+						margin-top: 95px;
+						@include transition(all .5s ease-in-out);
+						
+						@include transform(rotate(0deg) skew(0deg, 0deg));
+						text-align: right;
+						padding-right: 5%;
+					}
+			@media screen
+					and (min-width: 481px ) {
+						margin-top: 110px;
+						@include transform(rotate(0deg) skew(0deg, 0deg));
+						text-align: right;
+						padding-right: 5%;
+					}
+
+			@media screen
+					and (min-width: 581px ) {
+						margin-top: 120px;
+					}
+
+			@media screen
+					and (min-width: 640px ) {
+						margin-top: 125px;
+					}
+
+			@include breakpoint($breakpoint-level-3) {
+					display: none;
+				}
+			}
+
+	.call-to-action a, .call-to-action-long a {
+		color: $gray-light;
+	}
+
+	.call-to-action a:hover, .call-to-action-long a:hover {
+		// color: $dda-red;
+		// color: $froly;
+		// color: $marigold;
+		color: $gray-medium;
+		@include transition(all .375s ease-in-out);
+	}
+}
+
+
+.call-to-action a {
+		// font-family: 'questa_granderegular', fallback serif;
+		// font-family: 'bebas_neuebold', fallback sans-serif;
+		// font-family: 'wes_fyregular', fallback sans-serif;
+		// font-family: 'Georgia', fallback serif;
+		// font-family: 'questa_granderegular', fallback serif;
+		// font-family: 'bebas_neue_regularregular', fallback serif;
+		// font-family: 'Libre Baskerville', serif;
+  		// font-weight: 400;
+  		// font-style: italic;
+		// color: $dda-gray;
+		// color: $froly;
+		// color: $marigold;
+		@include font-five;
+		font-size: 1.375em;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		text-decoration: none;
+			@media screen
+					and (min-width: 381px ) {
+						font-size: 1.5em;
+					}
+
+			@media screen 
+					and (min-width: 421px) {
+						font-size: 1.75em;
+					}
+
+			@media screen
+					and (min-width: 481px) {
+						font-size: 1.85em;
+					}
+			@media screen
+					and (min-width: 482px) {
+						display: none;
+					}
+			// @media screen 
+			// 		and (min-width: 521px) {
+			// 			font-size: 2em;
+			// 		}
+		}
+
+.call-to-action-long, .call-to-action-long a {
+	visibility: hidden;
+}
+
+@media screen
+	and (min-width: 482px)
+	and (max-width: 767px){
+
+	.call-to-action-long {
+		text-align: right;
+		visibility: visible;
+		padding-right: 5%;
+		@media screen
+			and (min-width: 490px ) {
+				margin-top: 10px;
+					}
+		@media screen
+			and (min-width: 581px ) {
+				margin-top: 0px;
+		}
+	}
+
+	.call-to-action-long a {
+		// font-family: 'questa_granderegular', fallback serif;
+		// font-family: 'Libre Baskerville', serif;
+  		// font-weight: 400;
+  		// font-style: italic;
+		visibility: visible;
+		@include font-five;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 1.375em;
+			@media screen
+				and (min-width: 581px ) {
+					font-size: 1.5em;
+		}
+	}
+
+}
+
+.sub-headline-style-link {
+	text-decoration: none;
+  	color: $gray-medium;
+  	letter-spacing: 0px !important; 
+  	// border-bottom: 1px solid $gray-medium;
+}
+
+.sub-headline-style-link:hover {
+  // color: $dda-red;
+  // border-bottom: 1px solid $gray-medium;
+  // color: $gray-medium-darker;
+  color: $marigold-d2;
+  @include transition(all .375s ease-in-out);
+}
+
+.sub-headline-color {
+  // color: $dda-red;
+  // line-height: 10em;
+  color: $light-gray;
+}

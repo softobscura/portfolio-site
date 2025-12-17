@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+/*Constant*/
+body {
+	background-color: #CCC;
+}
+
+p {
+	font-size: 14px;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5em;
+	text-align: justify;
+	padding-bottom: 20px;
+}
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	color: #138DC2;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+h2 {
+	text-transform: uppercase;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+h3 {
+	text-transform: uppercase;
+	color: #138DC2;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+
+
+
+
+/*----------------------- LAYOUT -----------------------*/
+#header {
+	float: right;
+	width: 560px;
+	margin-top: 62px;
+	height: 50px;
+	margin-right: 25px;
+}
+
+#container {
+	width: 820px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFF;
+	box-shadow: 0px 0px 5px #999999;
+	background-image: url(../images/nav/engage-header-nav.png);
+	background-repeat: no-repeat;
+	height: 1200px;
+}
+#main-body {
+	float: right;
+	width: 510px;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	margin-right: 65px;
+}
+#main-body-two {
+	float: right;
+	width: 510px;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	margin-right: 65px;
+}
+
+
+/*----- Navigation ------*/
+#nav-top ul {
+	list-style-type: none;
+	margin: 0px;
+	text-decoration: none;
+}
+#nav-top ul li {
+	float: left;
+}
+#nav-top ul li a {
+	margin-right: 10px;
+	margin-left: 10px;
+	line-height: 50px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFF;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+/*---NAVIGATION EFFECTS---*/
+
+*#nav-top ul li a:hover {
+	color: #138DC2;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+
+/*---CURRENT PAGE INDICATOR---*/
+body#home a#homenav,
+body#about a#aboutnav,
+body#howitworks a#howitworksnav,
+body#contact a#contactnav {
+	color: #FFF;
+	background-color: #1075A0;
+	border-radius: 10px;
+}
+
+/*---END NAVIGATION EFFECTS---*/
+
+/*----- Footer -----*/
+
+#footer {
+	clear: both;
+	width: 510px;
+	float: right;
+	margin-right: 65px;
+	background-repeat: no-repeat;
+	background-position: right top;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #e2e2e2;
+	border-right-color: #e2e2e2;
+	border-bottom-color: #e2e2e2;
+	border-left-color: #e2e2e2;
+	padding-top: 10px;
+	margin-bottom: 10px;
+
+}
+.footer {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-size: 12px;
+}
+#DDA-logo  {
+	height: 20px;
+	width: 127px;
+	float: right;
+}
+.styling {
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+	text-transform: capitalize;
+}
+.emaillink {
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	text-transform: lowercase;
+	color: #666666;
+	text-decoration: underline;
+}
+.framestrokeborder {
+	border: 1px solid #666666;
+}
+.moveleft {
+	margin-left: -21px;
+}
+#imageplaceholder {
+	height: 403px;
+	width: 533px;
+	float: left;
+	margin-left: 225px;
+	margin-top: 45px;
+	background-image: url(../images/engage-will-help-you.png);
+	background-repeat: no-repeat;
+}
+#imageplaceholder-two {
+	height: 633px;
+	width: 533px;
+	float: left;
+	margin-left: 225px;
+	margin-top: 45px;
+	background-image: url(../images/how-engage-works-colored.png);
+	background-repeat: no-repeat;
+}
+#imageplaceholder-three {
+	height: 284px;
+	width: 533px;
+	float: left;
+	margin-left: 225px;
+	margin-top: 45px;
+	background-image: url(../images/at-first-it-was-personal.jpg);
+	background-repeat: no-repeat;
+}

@@ -1,0 +1,84 @@
+@import 'utilities/_variables';
+
+// ---- START ".section-content" ---- //
+.section-content {
+	@include clearfix;
+	//background-color: cyan;
+  //background-color: rgba(0, 0, 255, 0.2);
+  //position: relative;
+  margin-left: auto;
+  margin-right: auto;
+	//margin-top: 25px;
+	height: auto;
+	width: 90%;
+  // background-color: $opacity-block-1;
+    @include breakpoint($breakpoint-level-3) {
+      width: span(12 of 14);
+    }
+
+    @include breakpoint($breakpoint-level-4) {
+      width: span(14 of 16);
+    }
+}
+
+.about-margin {
+    	// margin-top: 1em;
+    @include breakpoint($breakpoint-level-1) {
+        // margin-top: 1em;
+  }
+    @include breakpoint($breakpoint-level-2) {
+        // margin-top: 1.125em;
+  }
+    @include breakpoint($breakpoint-level-3) {
+        // margin-top: 1.25em;
+  }
+    @include breakpoint($breakpoint-level-4) {
+        margin-top: 1.375em;
+  }
+}
+
+// Backup Code
+// .section-content-main, .section-content-aside {
+//       // margin-top: 1em;
+//     @include breakpoint($breakpoint-level-1) {
+//         // margin-top: 1em;
+//   }
+//     @include breakpoint($breakpoint-level-2) {
+//         // margin-top: 1.125em;
+//   }
+//     @include breakpoint($breakpoint-level-3) {
+//         // margin-top: 1.25em;
+//   }
+//     @include breakpoint($breakpoint-level-4) {
+//         margin-top: 1.375em;
+//   }
+// }
+
+.section-content-main {
+    @include clearfix;
+    // background-color: beige;
+    width: 100%;
+    @include breakpoint($breakpoint-level-4) {
+        padding-right: 2%;
+        @include span(10 of 14);
+        border-right: .5px solid $gray-light;
+        border-right: 1px solid $gray-light;
+    }
+}
+
+.section-content-aside {
+    @include clearfix;
+    // background-color: pink;
+    width: 100%;
+    @include breakpoint($breakpoint-level-4) {
+        width: span(4 of 14 last);
+        padding-left: 1%;
+      }
+}
+
+aside.section-content-aside p a {
+    color: $dda-red;
+    text-decoration: none;
+    // color: $marigold;
+}
+

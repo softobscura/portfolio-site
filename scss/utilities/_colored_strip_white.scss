@@ -1,0 +1,75 @@
+@import '_variables';
+
+// White Text Box
+.section-content::before {
+	// min-height: 70%;
+  @include transform-origin(50%, 50%);
+  @include transform(rotate(-15deg));
+  @include transition(all 1s ease-in-out);
+  // background-color: $dda-gray;
+  background-color: $white;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  
+  // left: -50%;
+  // width: 200%;
+  // top: 80px;
+
+  left: -75%;
+  width: 250%;
+  top: 85px;
+
+	@media screen and (max-width: 767px) {
+        @include box-shadow(#000000 0px 0px 5px);
+    }
+    
+
+
+
+    // Medium Phone -- // 321px to 480px
+            @include breakpoint($breakpoint-level-1) {
+              // min-height: 70%;
+              // Originally at 600px
+              @include transform(rotate(-10deg));
+              @include transition(all 1s ease-in-out);
+              content: "";
+              left: -50%;
+              top: 80px;
+              width: 200%;
+            }
+
+    // Big Phone -- // 481px to 767px
+            @include breakpoint($breakpoint-level-2) {
+              // min-height: 65%; // Originally at 600px
+              @include transform(rotate(-10deg));
+              @include transition(all 1s ease-in-out);
+              content: "";
+              left: -50%;
+              top: 100px;
+              width: 200%;
+            }
+
+    // Tablet -- // 768px to 1023px
+            @include breakpoint($breakpoint-level-3) {
+              // min-height: 60%; // Originally at 600px
+              @include transform(rotate(-3.5deg));
+              content: "";
+              left: -50%;
+              // top: 128.5px;
+              top: 118px;
+              width: 200%;
+            }
+
+    // Desktop -- // Layout 1025px and up
+           @include breakpoint($breakpoint-level-4) {
+              // min-height: 60%; // Originally at 600px
+              // height: 300px;
+              @include transform(rotate(-3.5deg));
+              content: "";
+              left: -50%;
+              top: 128.5px;
+              width: 200%;
+           }
+}

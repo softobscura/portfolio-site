@@ -1,0 +1,8 @@
+	Color Scheme
+	DDA Text Real Red 	#b30838
+	DDA Text Red 		#821518
+	Dark Red 		#871417
+	Dark Gray		#666666
+	Light Gray		#e2e2e2
+	Black			#FFF
+	White			#000
